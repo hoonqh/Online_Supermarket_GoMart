@@ -45,7 +45,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-![My Example Image](/images/Cloud_Solution.jpg)
+![Solution Architecture](/images/Cloud_Solution.jpg)
 
 GoMart is an online supermarket build using AWS and offers that offers high availability, scalability, and robust security features
 
@@ -54,20 +54,20 @@ GoMart is an online supermarket build using AWS and offers that offers high avai
 <!-- Built With -->
 ## Built With
 
+<div align="center">
+  <img src="/images/tech_stack.png" alt="Tech Stack">
+</div>
+
 ### Frontend
 * [Vue.js](https://vuejs.org/)
 * [React.js](https://reactjs.org/)
 
 ### Backend
-* [Vue.js](https://vuejs.org/)
-* [Angular](https://angular.io/)
-* [Svelte](https://svelte.dev/)
-* [Laravel](https://laravel.com)
-* [Bootstrap](https://getbootstrap.com)
-* [JQuery](https://jquery.com)
+* [Flask](https://flask.palletsprojects.com/en/3.0.x/)
+* [Docker](https://www.docker.com/)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- GETTING STARTED -->
