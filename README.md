@@ -40,35 +40,15 @@
   </ol>
 </details>
 
-
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
-![Solution Architecture](/images/Cloud_Solution.jpg)
-
 GoMart is an online supermarket build using AWS and offers that offers high availability, scalability, and robust security features
-
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-<!-- Built With -->
-## Built With
-
-<div align="center">
-  <img src="/images/tech_stack.png" alt="Tech Stack">
-</div>
-
-### Frontend
-* [Vue.js](https://vuejs.org/)
-* [React.js](https://reactjs.org/)
-
-### Backend
-* [Flask](https://flask.palletsprojects.com/en/3.0.x/)
-* [Docker](https://www.docker.com/)
-
-
+<!-- Solution Architecture -->
+## Solution Architecture
+![Solution Architecture](/images/Cloud_Solution.jpg)
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-- GETTING STARTED -->
 ## Getting Started
@@ -108,6 +88,24 @@ _Below is an example of how you can instruct your audience on installing and set
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
+
+<p align="right">(<a href="#top">back to top</a>)</p>
+
+<!-- Built With -->
+## Built With
+
+<div align="center">
+  <img src="/images/tech_stack.png" alt="Tech Stack">
+</div>
+
+### Frontend
+* [Vue.js](https://vuejs.org/)
+* [React.js](https://reactjs.org/)
+
+### Backend
+* [Flask](https://flask.palletsprojects.com/en/3.0.x/)
+* [Docker](https://www.docker.com/)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
