@@ -112,5 +112,16 @@ Finally, the AWS Lambda function is used to integrate the machine learning pipel
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
+<!-- Design Considerations -->
+##  Design Considerations
+<div align="center">
+  <img src="/images/ml_pipeline.png" alt="ML Pipeline">
+</div>
+
+### S3
+The first component, S3, is used to store the raw data that will be used to train the machine learning model. The training data is from DynamoDB and is stored in a csv format in S3.
+
+
+<p align="right">(<a href="#top">back to top</a>)</p>
 
 
