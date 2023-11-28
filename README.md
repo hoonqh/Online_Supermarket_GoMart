@@ -102,7 +102,7 @@ Elasticache helps to increase the performance and responsiveness of Go Mart’s 
 
 ### CI/CD Pipeline
 <div align="center">
-  <img src="/images/CICD.JPG" alt="CICD" height="300" width="300">
+  <img src="/images/CICD.JPG" alt="CICD" height="200" width="300">
 </div>
 
 <ins>3 Main Pipelines were implemented </ins> 
