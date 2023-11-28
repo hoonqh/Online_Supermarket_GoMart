@@ -102,7 +102,7 @@ GoMart is an online supermarket build using AWS and offers that offers high avai
 The first component, S3, is used to store the raw data that will be used to train the machine learning model. The training data is from DynamoDB and is stored in a csv format in S3.
 
 ### SageMaker
-The second component, Amazon SageMaker, is used to create and train the machine learning model using K Nearest Neighbours using features from the supermarket items such as price and categories. SageMaker provides prebuilt Docker images that install the scikit-learn and Spark ML libraries.
+The second component, Amazon SageMaker, is used to create and train the machine learning model using K Nearest Neighbours using features from the supermarket items such as price and categories. 
 
 ### SageMaker endpoint
 The third component, SageMaker endpoint, is used to deploy the trained machine learning model. The endpoint provides a REST API that can be used to perform real-time predictions on new data.
@@ -113,14 +113,12 @@ Finally, the AWS Lambda function is used to integrate the machine learning pipel
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- Design Considerations -->
-##  Design Considerations
+## Design Considerations
+### Multiple-Availability Zone Deployment
 <div align="center">
-  <img src="/images/ml_pipeline.png" alt="ML Pipeline">
+  <img src="/images/fargate.JPG" alt="Fargate" height="400" width="500">
 </div>
-
-### S3
-The first component, S3, is used to store the raw data that will be used to train the machine learning model. The training data is from DynamoDB and is stored in a csv format in S3.
-
+Fargate tasks were deployed across 2 AZs (active-active setup) in the Singapore region to ensure high availability even if 1 AZ goes down 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
