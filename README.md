@@ -120,6 +120,26 @@ Finally, the AWS Lambda function is used to integrate the machine learning pipel
 </div>
 Fargate tasks were deployed across 2 AZs (active-active setup) in the Singapore region to ensure high availability even if 1 AZ goes down 
 
+### Elasticache
+<div align="center">
+  <img src="/images/ElasticCache.JPG" alt="ElasticCache" height="300" width="300">
+</div>
+Elasticache helps to increase the performance and responsiveness of Go Mart’s application by storing frequently accessed data in a cache, which can be quickly retrieved and served to the user, instead of having to make multiple repeated read requests to DynamoDB. This helps to ensure scale of up to the millisecond level, and that DynamoDB will not be swarmed with too many IOPs. We a cache read-through strategy and set the cache expire TTL to 5 min.
+
+### CI/CD Pipeline
+<div align="center">
+  <img src="/images/CICD.JPG" alt="CICD" height="300" width="300">
+</div>
+
+<ins>3 Main Pipelines were implemented </ins> 
+
+1) gomart-build-BE: Builds the necessary docker images and pushes it into ECR’s private repository. This uses a Continuous Delivery idea to give Go Mart developers the power to decide when to push to production, and also because no staging environment was set up, it would not be ideal to have all changes go directly into production - this puts Go Mart’s SLAs at risk.
+
+2) gomart-deploy-BE: Deploy production-ready ECR images into the ECS services
+
+3) gomart-deploy-FE: Builds necessary frontend files and pushes it to a s3 bucket that hosts Go Mart’s website. This pipeline is customised to be triggered whenever there is a change in the master branch.
+
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 
