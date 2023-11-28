@@ -14,7 +14,7 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-GoMart is an online supermarket build using AWS and offers that offers high availability, scalability, and robust security features
+GoMart is an online supermarket website build using AWS and offers high availability, scalability, and robust security features
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- Solution Architecture -->
