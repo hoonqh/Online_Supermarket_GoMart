@@ -114,7 +114,7 @@ Finally, the AWS Lambda function is used to integrate the machine learning pipel
 
 <!-- Design Considerations -->
 ## Design Considerations
-### Multiple-Availability Zone Deployment
+### Multi-AZ Deployment
 <div align="center">
   <img src="/images/fargate.JPG" alt="Fargate" height="400" width="500">
 </div>
